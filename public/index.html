@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .login-btn {
+            color:white;
+            background-color: #1bd954;
+            text-decoration: none;
+        }
+        .login-btn :hover {
+            background-color: #084c1c;
+        }
+        a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        
+        #loggedin {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="logic-btn">
+        <a href=" /login">Log In With Spotify
+            <br>
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Black-768x230.png" width="400px">
+
+        </a>  
+    </button>
+
+    <div id="loggedin">
+        <h2>Top Track Generator</h2>
+        <div>
+            <button id="short_term">Last 30 Days</button>
+            <button id="medium_term">Last 6 Months</button>
+            <button id="long_term">All Time</button>
+        </div>
+
+    </div>
+
+    <script> src="https://code.jquery.com/jquery-1.10.1.min.js"</script>
+    <script>
+        $("#loggedin").show()
+    </script>
+</body>
+
+</html>
